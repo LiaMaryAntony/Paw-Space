@@ -1,0 +1,32 @@
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-list {
+  display: flex;
+  width:100%;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  white-space:nowrap;
+  flex-direction: row;
+  min-width: 0;
+
+}
+.flex-container > div {
+  flex: 0 0 auto;
+  min-width: 0;
+  
+}
+  .breed-card{
+    width: 20%;
+
+}
+.card-shadow {
+  -webkit-box-shadow: 0px 2px 8px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 2px 8px -1px rgba(0,0,0,0.75);
+  box-shadow: 0px 2px 8px -1px rgba(0,0,0,0.75);
+}
