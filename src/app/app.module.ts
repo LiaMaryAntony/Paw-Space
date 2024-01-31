@@ -17,7 +17,7 @@ export const presistStorage = persistState({
   include: [
     'breedImageDataStore'
   ],
-  key: 'powSpaceStore'
+  key: 'pawspaceStore'
 });
 @NgModule({
   declarations: [

@@ -3,13 +3,13 @@
 @import "primeng/resources/primeng.css";
 
 :root {
-    --powspace-default-font-color: #525252;
-    --powspace-font-family: Arial, Helvetica, sans-serif;
-    --powspace-font-weight-medium: --powspace-default-font-size;
-    --powspace-default-theme-color: #0073cf;
-    --powspace-default-white: #ffffff;
-    --powspace-page-bg-color: #edf0f2;
-    --powspace-default-error-color: #b91414
+    --pawspace-default-font-color: #525252;
+    --pawspace-font-family: Arial, Helvetica, sans-serif;
+    --pawspace-font-weight-medium: --pawspace-default-font-size;
+    --pawspace-default-theme-color: #0073cf;
+    --pawspace-default-white: #ffffff;
+    --pawspace-page-bg-color: #edf0f2;
+    --pawspace-default-error-color: #b91414
 }
 
 html,
@@ -21,8 +21,8 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--powspace-page-bg-color);
-    font-family: var(--powspace-font-family);
+    background: var(--pawspace-page-bg-color);
+    font-family: var(--pawspace-font-family);
 }
 
 .p-dialog-body-footer {
@@ -91,54 +91,54 @@ body {
 }
 
 .mandatory-indicator {
-    color: var(--powspace-default-error-color) !important
+    color: var(--pawspace-default-error-color) !important
 }
 
 .card-legend-title {
     font-size: 14px;
-    color: var(--powspace-default-font-color);
-    font-family: var(--powspace-font-family);
-    font-weight: var(--powspace-font-weight-medium);
+    color: var(--pawspace-default-font-color);
+    font-family: var(--pawspace-font-family);
+    font-weight: var(--pawspace-font-weight-medium);
     padding: 0px;
     margin-bottom: 25px;
 }
 
-.powspace-primary-clear-button {
-    background: var(--powspace-default-white) 0% 0% no-repeat padding-box;
+.pawspace-primary-clear-button {
+    background: var(--pawspace-default-white) 0% 0% no-repeat padding-box;
     border-radius: 4px;
     border: none;
     text-align: center;
-    font-weight: var(--powspace-font-weight-medium);
+    font-weight: var(--pawspace-font-weight-medium);
     letter-spacing: 0px;
-    color: var(--powspace-default-theme-color);
+    color: var(--pawspace-default-theme-color);
     opacity: 1px;
-    font-size: var(--powspace-default-font-size);
-    font-family: var(--powspace-font-family);
+    font-size: var(--pawspace-default-font-size);
+    font-family: var(--pawspace-font-family);
     height: 38px;
 }
 
-.powspace-primary-plain-button {
-    background: var(--powspace-default-white) 0% 0% no-repeat padding-box;
-    border: 1px solid var(--powspace-default-theme-color);
+.pawspace-primary-plain-button {
+    background: var(--pawspace-default-white) 0% 0% no-repeat padding-box;
+    border: 1px solid var(--pawspace-default-theme-color);
     border-radius: 4px;
     text-align: center;
-    font-weight: var(--powspace-font-weight-medium);
+    font-weight: var(--pawspace-font-weight-medium);
     letter-spacing: 0px;
-    color: var(--powspace-default-theme-color);
+    color: var(--pawspace-default-theme-color);
     opacity: 1px;
-    font-size: var(--powspace-default-font-size);
-    font-family: var(--powspace-font-family);
+    font-size: var(--pawspace-default-font-size);
+    font-family: var(--pawspace-font-family);
     height: 38px;
 }
 
-.powspace-no-result {
+.pawspace-no-result {
     text-align: center;
 }
 
 
 /* -------------------- tablets ----------------------*/
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .powspace-primary-plain-button, .powspace-primary-clear-button {
+    .pawspace-primary-plain-button, .pawspace-primary-clear-button {
         height: 30px;
     }
     .p-float-label label {
@@ -148,7 +148,7 @@ body {
 
 /* -------------------- mobile ----------------------*/
 @media only screen and (max-width: 767px) {
-    .powspace-primary-plain-button, .powspace-primary-clear-button {
+    .pawspace-primary-plain-button, .pawspace-primary-clear-button {
         height: 20px;
         font-size:9px;
     }
