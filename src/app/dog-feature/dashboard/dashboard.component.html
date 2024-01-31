@@ -9,14 +9,14 @@
             <span class="p-float-label">
               <p-dropdown [(ngModel)]="breed" inputid="breed" autoWidth="false" [style]="{ width: '250px' }"
                 [options]="breedNameList" (click)="getBreedNames()" (onChange)="getSubBreedNames()"
-                placeholder="Select a breed"></p-dropdown>
+                placeholder="select a breed"></p-dropdown>
               <label for="breed">Breed <span class="mandatory-indicator">*</span></label>
             </span>
           </div>
           <div class="mg-r-10">
             <span class="p-float-label">
               <p-dropdown [(ngModel)]="subBreed" inputid="subBreed" [style]="{ width: '250px' }"
-                [options]="subBreedNameList" autoWidth="false" [style]="{ width: '100%' }" placeholder="Select a breed">
+                [options]="subBreedNameList" autoWidth="false" [style]="{ width: '100%' }" placeholder="select a sub breed">
               </p-dropdown>
               <label for="subBreed">Sub Breed</label>
             </span>
@@ -31,14 +31,14 @@
             </span>
           </div>
           <div class="mg-r-10">
-            <button id="resetBtn" class="mg-t--5 powspace-primary-clear-button" pButton pripple type="button"
+            <button id="resetBtn" class="mg-t--5 pawspace-primary-clear-button" pButton pripple type="button"
               (click)="resetFilter()"
               [disabled]="utility.isNullorUndefined(breed) && utility.isNullorUndefined(breedName)">
               Reset
             </button>
           </div>
           <div class="mg-r-10">
-            <button id="searchFormBtn" pButton pRipple class="mg-t--5 powspace-primary-plain-button" type="button"
+            <button id="searchFormBtn" pButton pRipple class="mg-t--5 pawspace-primary-plain-button" type="button"
               [disabled]="utility.isNullorUndefined(breed) && utility.isNullorUndefined(breedName)"
               (click)="filterBreedData()">
               Search
@@ -63,7 +63,7 @@
         </div>
       </div>
     </div>
-    <div *ngIf="noDataFound === true" class="powspace-no-result">No dogs found.</div>
+    <div *ngIf="noDataFound === true" class="pawspace-no-result">No dogs found.</div>
 
   </div>
 </div>
