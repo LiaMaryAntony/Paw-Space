@@ -1,0 +1,72 @@
+.navbar {
+    position: sticky !important;
+    top: 0px;
+    z-index: 100;
+    overflow: clip;
+}
+
+.paw-space-header-menu {
+    position: absolute;
+    top: 0px;
+    left: 70px;
+    padding: 21px 0px;
+    font: 20px/30px var(--powspace-font-family);
+    letter-spacing: 0;
+    color: #FFC107;
+    width: 100px;
+    text-align: center;
+
+    &.active {
+        background: #FFC107;
+        color: #191a27;
+        text-decoration: underline;
+    }
+}
+
+.options-title {
+    font: 20px/30px var(--powspace-font-family);
+    letter-spacing: 0px;
+    color: #FFC107;
+    position: absolute;
+    top: 0px;
+    padding: 19px 0px;
+    right: 23px;
+    width: 100px;
+    text-align: center;
+
+    &.active {
+        background: #FFC107;
+        color: #191a27;
+         text-decoration: underline;
+    }
+}
+
+.cog-icon {
+    width: 19px;
+    height: 18px;
+    color: var(--powspace-default-theme-color);
+    opacity: 1;
+    cursor: pointer;
+    position: relative;
+    right: 5px;
+    top: 2px;
+}
+
+.p-toolbar {
+    display: block !important;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 55px;
+    background: #7359a2  6% 0% no-repeat padding-box;
+    border: none !important;
+    padding: 0px;
+    box-shadow: 0px 3px 6px 0 #00000029;
+    border-radius: 0px;
+    height: 72px;
+}
+
+.logo {
+    height: 72px;
+    width: 70px;
+}

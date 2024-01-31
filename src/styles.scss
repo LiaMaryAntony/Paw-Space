@@ -1,0 +1,164 @@
+/* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/saga-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+:root {
+    --powspace-default-font-color: #525252;
+    --powspace-font-family: Arial, Helvetica, sans-serif;
+    --powspace-font-weight-medium: --powspace-default-font-size;
+    --powspace-default-theme-color: #0073cf;
+    --powspace-default-white: #ffffff;
+    --powspace-page-bg-color: #edf0f2;
+    --powspace-default-error-color: #b91414
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--powspace-page-bg-color);
+    font-family: var(--powspace-font-family);
+}
+
+.p-dialog-body-footer {
+    float: right;
+    padding: 1rem 0rem;
+}
+
+.p-dialog-body {
+    margin: 40px 0px;
+}
+
+.p-float-label {
+    margin-top: -0.35rem !important;
+
+    .ng-invalid.ng-dirty+label {
+        color: #b91414;
+    }
+}
+
+.p-inputtext {
+    padding: 0.5rem !important;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 1.5;
+    height: 33px;
+    display: inline-flex !important;
+    align-items: center;      
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.mg-t-20 {
+    margin-top: 20px;
+}
+
+.mg-t-12 {
+    margin-top: 12px;
+}
+
+.mg-t-10 {
+    margin-top: 10px;
+}
+
+.mg-r-10 {
+    margin-right: 10px;
+}
+.mg-l-10 {
+    margin-left: 10px;
+}
+.mg-b-10 {
+    margin-bottom: 10px;
+}
+.mg-t--5 {
+    margin-top: -5px;
+}
+
+.mg-l-10 {
+    margin-left: 10px;
+}
+
+
+.p-fluid .p-button {
+    width: initial;
+}
+
+.mandatory-indicator {
+    color: var(--powspace-default-error-color) !important
+}
+
+.card-legend-title {
+    font-size: 14px;
+    color: var(--powspace-default-font-color);
+    font-family: var(--powspace-font-family);
+    font-weight: var(--powspace-font-weight-medium);
+    padding: 0px;
+    margin-bottom: 25px;
+}
+
+.powspace-primary-clear-button {
+    background: var(--powspace-default-white) 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    border: none;
+    text-align: center;
+    font-weight: var(--powspace-font-weight-medium);
+    letter-spacing: 0px;
+    color: var(--powspace-default-theme-color);
+    opacity: 1px;
+    font-size: var(--powspace-default-font-size);
+    font-family: var(--powspace-font-family);
+    height: 38px;
+}
+
+.powspace-primary-plain-button {
+    background: var(--powspace-default-white) 0% 0% no-repeat padding-box;
+    border: 1px solid var(--powspace-default-theme-color);
+    border-radius: 4px;
+    text-align: center;
+    font-weight: var(--powspace-font-weight-medium);
+    letter-spacing: 0px;
+    color: var(--powspace-default-theme-color);
+    opacity: 1px;
+    font-size: var(--powspace-default-font-size);
+    font-family: var(--powspace-font-family);
+    height: 38px;
+}
+
+.powspace-no-result {
+    text-align: center;
+}
+
+
+/* -------------------- tablets ----------------------*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .powspace-primary-plain-button, .powspace-primary-clear-button {
+        height: 30px;
+    }
+    .p-float-label label {
+        font-size:12px;
+    }
+}
+
+/* -------------------- mobile ----------------------*/
+@media only screen and (max-width: 767px) {
+    .powspace-primary-plain-button, .powspace-primary-clear-button {
+        height: 20px;
+        font-size:9px;
+    }
+    .p-inputtext {
+        line-height: 1;
+        height: 20px;  
+        font-size:9px;  
+    }
+    .p-float-label label {
+        font-size:9px;
+        margin-top: -0.10rem 
+    }
+}

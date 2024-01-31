@@ -1,0 +1,69 @@
+<div class="mg-t-12 w-100">
+  <div class="p-col-10 p-px-0">
+    <p-card>
+      <fieldset style="min-width: auto">
+        <legend class="card-legend-title">Dog Breed Filter</legend>
+
+        <div class="flex-container">
+          <div class="mg-r-10">
+            <span class="p-float-label">
+              <p-dropdown [(ngModel)]="breed" inputid="breed" autoWidth="false" [style]="{ width: '250px' }"
+                [options]="breedNameList" (click)="getBreedNames()" (onChange)="getSubBreedNames()"
+                placeholder="Select a breed"></p-dropdown>
+              <label for="breed">Breed <span class="mandatory-indicator">*</span></label>
+            </span>
+          </div>
+          <div class="mg-r-10">
+            <span class="p-float-label">
+              <p-dropdown [(ngModel)]="subBreed" inputid="subBreed" [style]="{ width: '250px' }"
+                [options]="subBreedNameList" autoWidth="false" [style]="{ width: '100%' }" placeholder="Select a breed">
+              </p-dropdown>
+              <label for="subBreed">Sub Breed</label>
+            </span>
+          </div>
+          OR
+          <div class="mg-r-10 mg-l-10">
+            <span class="p-float-label">
+              <input [(ngModel)]="breedName" type="text" class="p-inputtext" inputid="breedName" minlength="1"
+                maxlength="80" (change)="clearBreedSelectFilter()" [ngClass]="{'p-filled':breedName !== ''}"
+                onlyAlphabet />
+              <label for="dogName">Breed Name<span class="mandatory-indicator">*</span></label>
+            </span>
+          </div>
+          <div class="mg-r-10">
+            <button id="resetBtn" class="mg-t--5 powspace-primary-clear-button" pButton pripple type="button"
+              (click)="resetFilter()"
+              [disabled]="utility.isNullorUndefined(breed) && utility.isNullorUndefined(breedName)">
+              Reset
+            </button>
+          </div>
+          <div class="mg-r-10">
+            <button id="searchFormBtn" pButton pRipple class="mg-t--5 powspace-primary-plain-button" type="button"
+              [disabled]="utility.isNullorUndefined(breed) && utility.isNullorUndefined(breedName)"
+              (click)="filterBreedData()">
+              Search
+            </button>
+          </div>
+        </div>
+
+      </fieldset>
+    </p-card>
+  </div>
+  <div class="w-100">
+    <div *ngIf="!noDataFound" class="card-shadow" id="breedtList">
+
+      <div class="flex-list">
+        <div *ngFor="let breed of allBreedImages" class="mg-l-10 mg-b-10 mg-t-10">
+          <p-card>
+            <fieldset style="min-width: auto">
+              <legend class="card-legend-title">{{breed.split("/")[4]}}</legend>
+              <img [src]="breed" height="200" width="200" />
+            </fieldset>
+          </p-card>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="noDataFound === true" class="powspace-no-result">No dogs found.</div>
+
+  </div>
+</div>
